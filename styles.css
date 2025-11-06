@@ -182,33 +182,39 @@ body {
 }
 
 .slide:nth-child(1) {
-    background-image: linear-gradient(rgba(15, 23, 42, 0.6), rgba(15, 23, 42, 0.6)),
-                      url('https://images.unsplash.com/photo-1623387641168-d9803ddd3f35?w=1600&h=900&fit=crop');
+    background-image: linear-gradient(rgba(15, 23, 42, 0.5), rgba(15, 23, 42, 0.5)),
+                      url('https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=1920&h=1080&fit=crop&q=90');
+    /* Golden Retriever drinking from stream - pure joy and natural refreshment */
 }
 
 .slide:nth-child(2) {
-    background-image: linear-gradient(rgba(15, 23, 42, 0.6), rgba(15, 23, 42, 0.6)),
-                      url('https://images.unsplash.com/photo-1600077106724-946750eeaf3c?w=1600&h=900&fit=crop');
+    background-image: linear-gradient(rgba(15, 23, 42, 0.5), rgba(15, 23, 42, 0.5)),
+                      url('https://images.unsplash.com/photo-1477884213360-7e9d7dcc1e48?w=1920&h=1080&fit=crop&q=90');
+    /* Happy dog close-up - emotional connection, trusting eyes */
 }
 
 .slide:nth-child(3) {
-    background-image: linear-gradient(rgba(15, 23, 42, 0.6), rgba(15, 23, 42, 0.6)),
-                      url('https://images.unsplash.com/photo-1592194996308-7b43878e84a6?w=1600&h=900&fit=crop');
+    background-image: linear-gradient(rgba(15, 23, 42, 0.5), rgba(15, 23, 42, 0.5)),
+                      url('https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=1920&h=1080&fit=crop&q=90');
+    /* Puppy drinking water - innocence and vulnerability */
 }
 
 .slide:nth-child(4) {
-    background-image: linear-gradient(rgba(15, 23, 42, 0.6), rgba(15, 23, 42, 0.6)),
-                      url('https://images.unsplash.com/photo-1591769225440-811ad7d6eab3?w=1600&h=900&fit=crop');
+    background-image: linear-gradient(rgba(15, 23, 42, 0.5), rgba(15, 23, 42, 0.5)),
+                      url('https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?w=1920&h=1080&fit=crop&q=90');
+    /* Dog and owner together - showing the bond and trust */
 }
 
 .slide:nth-child(5) {
-    background-image: linear-gradient(rgba(15, 23, 42, 0.6), rgba(15, 23, 42, 0.6)),
-                      url('https://images.unsplash.com/photo-1504595403659-9088ce801e29?w=1600&h=900&fit=crop');
+    background-image: linear-gradient(rgba(15, 23, 42, 0.5), rgba(15, 23, 42, 0.5)),
+                      url('https://images.unsplash.com/photo-1558788353-f76d92427f16?w=1920&h=1080&fit=crop&q=90');
+    /* Energetic dog playing - vibrant health and vitality */
 }
 
 .slide:nth-child(6) {
-    background-image: linear-gradient(rgba(15, 23, 42, 0.6), rgba(15, 23, 42, 0.6)),
-                      url('https://images.unsplash.com/photo-1548366086-7f1b76106622?w=1600&h=900&fit=crop');
+    background-image: linear-gradient(rgba(15, 23, 42, 0.5), rgba(15, 23, 42, 0.5)),
+                      url('https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=1920&h=1080&fit=crop&q=90');
+    /* Dog looking lovingly at camera - trust and companionship */
 }
 
 .hero-overlay {
