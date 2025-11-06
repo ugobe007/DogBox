@@ -11,8 +11,8 @@ function nextSlide() {
     slides[currentSlide].classList.add('active');
 }
 
-// Change slide every 4 seconds (faster rotation with more images)
-setInterval(nextSlide, 4000);
+// Change slide every 3.5 seconds for smoother rotation with 9 images
+setInterval(nextSlide, 3500);
 
 // ===== Zip Code Form Handler =====
 document.getElementById('zipForm').addEventListener('submit', function(e) {

@@ -217,6 +217,24 @@ body {
     /* Dog looking lovingly at camera - trust and companionship */
 }
 
+.slide:nth-child(7) {
+    background-image: linear-gradient(rgba(15, 23, 42, 0.5), rgba(15, 23, 42, 0.5)),
+                      url('https://images.unsplash.com/photo-1552053831-71594a27632d?w=1920&h=1080&fit=crop&q=90');
+    /* Dog drinking from bowl - everyday care and love */
+}
+
+.slide:nth-child(8) {
+    background-image: linear-gradient(rgba(15, 23, 42, 0.5), rgba(15, 23, 42, 0.5)),
+                      url('https://images.unsplash.com/photo-1517849845537-4d257902454a?w=1920&h=1080&fit=crop&q=90');
+    /* Dog in nature - freedom and natural living */
+}
+
+.slide:nth-child(9) {
+    background-image: linear-gradient(rgba(15, 23, 42, 0.5), rgba(15, 23, 42, 0.5)),
+                      url('https://images.unsplash.com/photo-1561037404-61cd46aa615b?w=1920&h=1080&fit=crop&q=90');
+    /* Puppy portrait - innocence and protection */
+}
+
 .hero-overlay {
     position: relative;
     height: 100%;
