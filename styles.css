@@ -2298,7 +2298,7 @@ a, button, .nav-icon, .product-card, .community-post {
 .nav-btn-about {
     position: fixed;
     bottom: var(--space-lg);
-    right: var(--space-lg);
+    right: calc(var(--space-lg) + 280px); /* Position to the left of Fred button */
     background: linear-gradient(135deg, #FF6B35, #F7931E);
     color: white;
     padding: 1rem 2rem;
@@ -2341,7 +2341,7 @@ a, button, .nav-icon, .product-card, .community-post {
 
 @media (max-width: 768px) {
     .nav-btn-about {
-        bottom: var(--space-md);
+        bottom: calc(var(--space-md) + 80px); /* Stack above Fred button on mobile */
         right: var(--space-md);
         padding: 0.875rem 1.75rem;
         font-size: 1rem;
