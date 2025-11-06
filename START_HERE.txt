@@ -1,0 +1,47 @@
+DogBox Website - Quick Start
+============================
+
+🎉 Your website is ready to use!
+
+HOW TO VIEW:
+1. Download all files from this folder
+2. Double-click "index.html" to open in your browser
+3. That's it! No installation needed.
+
+WHAT YOU'LL SEE:
+✓ Beautiful rotating dog images
+✓ Zip code water quality checker
+✓ Email signup form
+✓ Community photo board
+
+FILES IN THIS FOLDER:
+- index.html      (Main website page)
+- styles.css      (Design and styling)
+- script.js       (Interactivity)
+- water-data.js   (Water contamination database)
+- README.md       (Full documentation)
+- START_HERE.txt  (This file)
+
+TRY IT OUT:
+• Enter a zip code like: 89101, 89102, or 90001
+• Sign up with your email
+• Post a dog photo to the community board
+
+IMPORTANT NOTE:
+Currently, all data is stored temporarily in your browser.
+For production use, you'll need to set up a backend database.
+See README.md for instructions.
+
+NEED HELP?
+Read the README.md file for:
+- How to add more zip codes
+- How to collect real email signups
+- How to host the website online
+- Customization options
+
+Contact: Bob Christopher
+Company: LV Robotics / Legup Labs
+
+============================
+🐕 DogBox - Water for Dogs 💧
+============================

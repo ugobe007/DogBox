@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommended Hydration Products - DogBox</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Floating Navigation -->
+    <nav class="floating-nav">
+        <a href="index.html#home" class="nav-icon" title="Home">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+            <span>Home</span>
+        </a>
+        <a href="index.html#community" class="nav-icon" title="Community">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+            <span>Community</span>
+        </a>
+    </nav>
+
+    <!-- Products Hero -->
+    <section class="products-hero">
+        <div class="container">
+            <div class="products-hero-content">
+                <img src="logo-text.svg" alt="DogBox.water" class="products-logo">
+                <h1>Recommended Hydration Products</h1>
+                <p>Give your dog the clean, fortified water they deserve with our curated selection of premium hydration solutions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Disclaimer -->
+    <section class="disclaimer-section">
+        <div class="container">
+            <p class="disclaimer-text">
+                <strong>Disclaimer:</strong> DogBox has no affiliate or reseller relationships with any of the companies listed below. 
+                These are independent product recommendations based on research and quality standards. We do not receive any compensation for these recommendations.
+            </p>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-header">
+                <h2 class="section-heading">Our Top Recommendations</h2>
+                <button class="btn-fred-optimize" onclick="openFredOptimizer()">
+                    🐕 Get Fred's Help
+                    <span class="fred-subtitle">Personalized hydration routine</span>
+                </button>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Product 1: Dogua -->
+                <div class="product-card">
+                    <div class="product-badge">Best Value</div>
+                    <div class="product-image">
+                        <img src="https://doggosessions.com/cdn/shop/files/dogua-lupin-bowl.gif?v=1762073600" alt="Dogua High-Protein Hydration Mix">
+                    </div>
+                    <div class="product-content">
+                        <h3>Dogua™ High-Protein Hydration Mix</h3>
+                        <p class="product-description">Low-calorie freeze-dried hydration treat that makes drinking water a reward. Perfect for pre-hydration, hikes, trail rides, and busy days.</p>
+                        <ul class="product-features">
+                            <li>✓ 3/4 calorie or less per disc</li>
+                            <li>✓ 100% USA made, human-grade</li>
+                            <li>✓ Freeze-dried for max flavor</li>
+                            <li>✓ Portable resealable tube</li>
+                        </ul>
+                        <div class="product-footer">
+                            <span class="product-price">$4.50</span>
+                            <a href="https://doggosessions.com/products/dogua-dog-hydration-mix" target="_blank" rel="noopener" class="btn-product">View Product</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2: Good Trouble -->
+                <div class="product-card">
+                    <div class="product-badge">Top Rated</div>
+                    <div class="product-image">
+                        <img src="https://goodtroublepets.com/cdn/shop/files/71pFVDJpxRL._AC_SL1500.jpg?v=1743832152" alt="Good Trouble Hydration Powder">
+                    </div>
+                    <div class="product-content">
+                        <h3>Good Trouble Hydration Powder</h3>
+                        <p class="product-description">Packed with essential nutrients, electrolytes, and irresistible beef flavor. Ensures optimal well-being, vitality, and quick recovery. No fillers or grains.</p>
+                        <ul class="product-features">
+                            <li>✓ Vitamin C, peptides, amino acids</li>
+                            <li>✓ 30 servings (1 tub)</li>
+                            <li>✓ Made in USA, 3rd party tested</li>
+                            <li>✓ 30-day money-back guarantee</li>
+                        </ul>
+                        <div class="product-footer">
+                            <span class="product-price">$24.79 <span style="text-decoration: line-through; opacity: 0.6; font-size: 0.9em;">$30.99</span></span>
+                            <a href="https://goodtroublepets.com/products/hydration-powder-dog-supplement" target="_blank" rel="noopener" class="btn-product">View Product</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3: Thirsty Dog -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://www.zoomdogsupplements.com/assets/images/prod%20imgs/thirsty%20dog%20front_90ct_96%20ppi.jpg" alt="Thirsty Dog Electrolyte Tabs">
+                    </div>
+                    <div class="product-content">
+                        <h3>Thirsty Dog™ Electrolyte Tabs</h3>
+                        <p class="product-description">Odorless, natural electrolyte water additive supplement. Dissolves in water with mineral electrolytes, B vitamins, and amino acids for balanced energy.</p>
+                        <ul class="product-features">
+                            <li>✓ 90 tablets per bottle</li>
+                            <li>✓ Supports balanced energy production</li>
+                            <li>✓ Ideal for hunting & active dogs</li>
+                            <li>✓ Easy water bowl administration</li>
+                        </ul>
+                        <div class="product-footer">
+                            <span class="product-price">$19.99 <span style="text-decoration: line-through; opacity: 0.6; font-size: 0.9em;">$24.99</span></span>
+                            <a href="https://www.zoomdogsupplements.com/Thirsty-Dogtrade-Electrolyte-Hydration-Tabs-90-ct-bottle_p_53.html" target="_blank" rel="noopener" class="btn-product">View Product</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4: HydrADE -->
+                <div class="product-card">
+                    <div class="product-badge">Amazon Top 100</div>
+                    <div class="product-image">
+                        <img src="https://m.media-amazon.com/images/I/715fUxqndrL._AC_SX679_.jpg" alt="HydrADE Electrolyte Powder">
+                    </div>
+                    <div class="product-content">
+                        <h3>HydrADE Electrolyte Powder</h3>
+                        <p class="product-description">Complete electrolyte solution for dogs & cats. Replaces lost electrolytes and supports hydration during dehydration, stress, or intense activity.</p>
+                        <ul class="product-features">
+                            <li>✓ 8 oz powder (16 servings)</li>
+                            <li>✓ Vitamin C, chloride, amino acids</li>
+                            <li>✓ Encourages water consumption</li>
+                            <li>✓ 4.0/5 stars (130+ reviews)</li>
+                        </ul>
+                        <div class="product-footer">
+                            <span class="product-price">$14.99</span>
+                            <a href="https://www.amazon.com/HydrADE-Powder-Electrolytes-Dehydration-Hydration/dp/B0C5LDGLN4" target="_blank" rel="noopener" class="btn-product">View Product</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5: Dog is Human -->
+                <div class="product-card">
+                    <div class="product-badge">Vet Formulated</div>
+                    <div class="product-image">
+                        <img src="https://dogishuman.com/cdn/shop/files/beefjarfront_graytint_placement.jpg?v=1704940327" alt="Dog is Human Daily Multivitamin">
+                    </div>
+                    <div class="product-content">
+                        <h3>Dog is Human Daily Multivitamin</h3>
+                        <p class="product-description">Human-grade multivitamin soft chews with 12 clinically-backed ingredients. Five essential health benefits: skin & coat, hip & joint, digestion, immunity, and heart health.</p>
+                        <ul class="product-features">
+                            <li>✓ 60 chews (up to 2-month supply)</li>
+                            <li>✓ Glucosamine, salmon oil, probiotics</li>
+                            <li>✓ Made in Vermont, non-GMO</li>
+                            <li>✓ Suitable for dogs 3+ months</li>
+                        </ul>
+                        <div class="product-footer">
+                            <span class="product-price">$49.30 <span style="text-decoration: line-through; opacity: 0.6; font-size: 0.9em;">$58.00</span></span>
+                            <a href="https://dogishuman.com/products/daily-multivitamin-beef" target="_blank" rel="noopener" class="btn-product">View Product</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6: AI Discovery -->
+                <div class="product-card">
+                    <div class="product-badge">AI Powered</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=600&h=400&fit=crop" alt="AI Product Discovery">
+                    </div>
+                    <div class="product-content">
+                        <h3>Get Personalized Recommendations</h3>
+                        <p class="product-description">Use our AI assistant to find the perfect hydration products for your dog's specific needs based on breed, age, activity level, and health concerns.</p>
+                        <ul class="product-features">
+                            <li>✓ Personalized AI recommendations</li>
+                            <li>✓ Based on your dog's profile</li>
+                            <li>✓ Unbiased product guidance</li>
+                            <li>✓ Health-first approach</li>
+                        </ul>
+                        <div class="product-footer">
+                            <span class="product-price">Free Consultation</span>
+                            <a href="#" class="btn-product" onclick="event.preventDefault(); document.querySelector('.ai-chat-button').click();">Ask Fred</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Why These Products -->
+            <div class="why-section">
+                <h2>Why We Recommend These Products</h2>
+                <div class="why-grid">
+                    <div class="why-item">
+                        <div class="why-icon">🔬</div>
+                        <h3>Science-Backed</h3>
+                        <p>All products are tested and proven to remove harmful contaminants that affect your dog's health.</p>
+                    </div>
+                    <div class="why-item">
+                        <div class="why-icon">✓</div>
+                        <h3>Vet Approved</h3>
+                        <p>Recommended by veterinarians and pet health professionals nationwide.</p>
+                    </div>
+                    <div class="why-item">
+                        <div class="why-icon">🏆</div>
+                        <h3>Quality Tested</h3>
+                        <p>NSF certified and independently tested for safety and effectiveness.</p>
+                    </div>
+                    <div class="why-item">
+                        <div class="why-icon">💚</div>
+                        <h3>Dog Owner Loved</h3>
+                        <p>Thousands of satisfied customers have seen real improvements in their dogs' health.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Chat Assistant -->
+    <div class="ai-chat-widget">
+      <button class="ai-chat-button" id="aiChatButton">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+        </svg>
+        <span>Ask Fred 🐕</span>
+      </button>
+      
+      <div class="ai-chat-window" id="aiChatWindow">
+        <div class="ai-chat-header">
+          <h3>� Fred's Hydration Advice</h3>
+          <button class="ai-chat-close" id="aiChatClose">×</button>
+        </div>
+        <div class="ai-chat-messages" id="aiChatMessages">
+          <div class="ai-message">
+            <div class="ai-avatar">🐕</div>
+            <div class="ai-message-content">
+              <p>Woof! I'm Fred, your friendly hydration advisor! I'll help you find the best hydration products for your pup.</p>
+              <p>To get started, please tell me:</p>
+              <ul>
+                <li>Your dog's breed and age</li>
+                <li>Weight and activity level</li>
+                <li>Any health concerns or allergies</li>
+                <li>Your budget range</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="ai-chat-input-container">
+          <input type="text" class="ai-chat-input" id="aiChatInput" placeholder="Describe your dog's needs..." />
+          <button class="ai-chat-send" id="aiChatSend">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="22" y1="2" x2="11" y2="13"></line>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+          </button>
+        </div>
+        <div class="ai-chat-disclaimer">
+          <small>Fred provides AI-powered recommendations. Always consult your veterinarian before making health decisions for your pet.</small>
+        </div>
+      </div>
+    </div>
+
+    <script src="fred-assistant.js"></script>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <h4>DogBox</h4>
+                    <p>by legup labs</p>
+                    <p>Hydration, happiness for pets</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html#home">Home</a>
+                    <a href="index.html#community">Community</a>
+                    <a href="index.html#about">About Us</a>
+                    <a href="products.html">Products</a>
+                </div>
+                <div>
+                    <p>© 2025 DogBox. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
