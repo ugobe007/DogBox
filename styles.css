@@ -2291,7 +2291,7 @@ a, button, .nav-icon, .product-card, .community-post {
 /* About Us Navigation Button */
 .nav-btn-about {
     position: fixed;
-    top: var(--space-lg);
+    bottom: var(--space-lg);
     right: var(--space-lg);
     background: linear-gradient(135deg, var(--primary), var(--accent));
     color: white;
@@ -2315,7 +2315,7 @@ a, button, .nav-icon, .product-card, .community-post {
 
 @media (max-width: 768px) {
     .nav-btn-about {
-        top: var(--space-md);
+        bottom: var(--space-md);
         right: var(--space-md);
         padding: 0.75rem 1.5rem;
         font-size: 0.9rem;
