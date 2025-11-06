@@ -2297,8 +2297,8 @@ a, button, .nav-icon, .product-card, .community-post {
 /* About Us Navigation Button */
 .nav-btn-about {
     position: fixed;
-    bottom: var(--space-lg);
-    right: calc(var(--space-lg) + 280px); /* Position to the left of Fred button */
+    bottom: 32px;
+    right: 320px; /* Position to the left of Fred button */
     background: linear-gradient(135deg, #FF6B35, #F7931E);
     color: white;
     padding: 1rem 2rem;
@@ -2308,7 +2308,7 @@ a, button, .nav-icon, .product-card, .community-post {
     font-size: 1.1rem;
     box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
     transition: all 0.3s ease;
-    z-index: 999;
+    z-index: 10001;
     display: flex;
     align-items: center;
     gap: 0.625rem;
@@ -2341,8 +2341,8 @@ a, button, .nav-icon, .product-card, .community-post {
 
 @media (max-width: 768px) {
     .nav-btn-about {
-        bottom: calc(var(--space-md) + 80px); /* Stack above Fred button on mobile */
-        right: var(--space-md);
+        bottom: 120px; /* Stack above Fred button on mobile */
+        right: 16px;
         padding: 0.875rem 1.75rem;
         font-size: 1rem;
     }
