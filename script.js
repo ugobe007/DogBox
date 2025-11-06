@@ -183,6 +183,9 @@ document.getElementById('communityPostForm').addEventListener('submit', function
 
 // ===== Smooth Scrolling =====
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    // Skip external links (like about.html button)
+    if (anchor.hasAttribute('data-external-link')) return;
+    
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
