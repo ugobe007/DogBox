@@ -249,7 +249,7 @@ document.getElementById('communityPostForm').addEventListener('submit', function
 });
 
 // Hamburger Menu Functionality
-(function() {
+document.addEventListener('DOMContentLoaded', function() {
   const hamburgerBtn = document.getElementById('hamburgerBtn');
   const hamburgerNav = document.getElementById('hamburgerNav');
   const hamburgerClose = document.getElementById('hamburgerClose');
@@ -291,4 +291,4 @@ document.getElementById('communityPostForm').addEventListener('submit', function
       }
     });
   }
-})();
+});
