@@ -211,7 +211,7 @@ window.addEventListener('DOMContentLoaded', function() {
         postDiv.className = 'community-post';
         postDiv.innerHTML = `
             <div class="post-image">
-                <img src="https://images.unsplash.com/photo-1530281700549-e82e7bf110d6?w=400&h=400&fit=crop" alt="${post.dogName}">
+                <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=400&h=400&fit=crop" alt="${post.dogName}">
             </div>
             <div class="post-content">
                 <h4>${post.dogName}</h4>
