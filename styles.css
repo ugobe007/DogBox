@@ -260,6 +260,47 @@ body {
     letter-spacing: -0.02em;
 }
 
+.hero-cta-button {
+    background: linear-gradient(135deg, #EF4444, #DC2626);
+    color: white;
+    border: none;
+    padding: var(--space-lg) var(--space-2xl);
+    border-radius: 50px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    margin-bottom: var(--space-2xl);
+    text-transform: capitalize;
+    letter-spacing: 0.02em;
+    box-shadow: 0 8px 24px rgba(239, 68, 68, 0.4),
+                0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    animation: fadeInUp 0.8s ease-out 0.4s both, buttonPulse 2s ease-in-out infinite;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero-cta-button:hover {
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 12px 32px rgba(239, 68, 68, 0.5),
+                0 6px 16px rgba(0, 0, 0, 0.4);
+    animation: fadeInUp 0.8s ease-out 0.4s both;
+}
+
+.hero-cta-button:active {
+    transform: translateY(-2px) scale(1.02);
+}
+
+@keyframes buttonPulse {
+    0%, 100% { 
+        box-shadow: 0 8px 24px rgba(239, 68, 68, 0.4),
+                    0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+    50% { 
+        box-shadow: 0 12px 32px rgba(239, 68, 68, 0.6),
+                    0 6px 16px rgba(0, 0, 0, 0.4);
+    }
+}
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -1299,6 +1340,12 @@ body {
         font-size: 1.65rem;
         font-weight: 600;
         line-height: 1.4;
+    }
+
+    .hero-cta-button {
+        font-size: 1.1rem;
+        padding: var(--space-md) var(--space-xl);
+        margin-bottom: var(--space-xl);
     }
     
     .hero-content {
