@@ -1,9 +1,5 @@
 // Fred AI Assistant - Persistent across pages
 (function() {
-  // Check if Fred has been accepted
-  const fredAccepted = localStorage.getItem('fredAccepted');
-  const fredDeclined = localStorage.getItem('fredDeclined');
-  
   const chatButton = document.getElementById('aiChatButton');
   const chatWindow = document.getElementById('aiChatWindow');
   const chatClose = document.getElementById('aiChatClose');
@@ -11,47 +7,13 @@
   const chatSend = document.getElementById('aiChatSend');
   const chatMessages = document.getElementById('aiChatMessages');
   const acceptModal = document.getElementById('aiAcceptModal');
-  const acceptBtn = document.getElementById('acceptFred');
-  const declineBtn = document.getElementById('declineFred');
 
-  // Show modal on first visit (if not already decided)
-  if (!fredAccepted && !fredDeclined) {
-    setTimeout(() => {
-      if (acceptModal) {
-        acceptModal.classList.add('active');
-      }
-    }, 3000); // Show after 3 seconds
-  }
+  // Fred is always available in the background - show the button immediately
+  chatButton.style.display = 'flex';
 
-  // If Fred was accepted, show the button
-  if (fredAccepted === 'true') {
-    chatButton.style.display = 'flex';
-  }
-
-  // Accept Fred
-  if (acceptBtn) {
-    acceptBtn.addEventListener('click', () => {
-      localStorage.setItem('fredAccepted', 'true');
-      localStorage.removeItem('fredDeclined');
-      acceptModal.classList.remove('active');
-      chatButton.style.display = 'flex';
-      
-      // Auto-open chat to say hi
-      setTimeout(() => {
-        chatWindow.classList.add('active');
-        chatButton.style.display = 'none';
-        chatInput.focus();
-      }, 500);
-    });
-  }
-
-  // Decline Fred
-  if (declineBtn) {
-    declineBtn.addEventListener('click', () => {
-      localStorage.setItem('fredDeclined', 'true');
-      acceptModal.classList.remove('active');
-      chatButton.style.display = 'none';
-    });
+  // Remove the accept modal since Fred is optional background help
+  if (acceptModal) {
+    acceptModal.remove();
   }
 
   // Open chat
