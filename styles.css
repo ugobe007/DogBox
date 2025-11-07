@@ -261,7 +261,7 @@ body {
 }
 
 .hero-cta-button {
-    background: linear-gradient(135deg, #5B21B6, #3B82F6);
+    background: linear-gradient(135deg, #60A5FA, #3B82F6);
     color: white;
     border: none;
     padding: calc(var(--space-lg) * 0.65) calc(var(--space-2xl) * 0.65);
@@ -272,16 +272,34 @@ body {
     margin-bottom: var(--space-2xl);
     text-transform: capitalize;
     letter-spacing: 0.02em;
-    box-shadow: 0 5px 16px rgba(91, 33, 182, 0.4),
+    box-shadow: 0 5px 16px rgba(59, 130, 246, 0.4),
                 0 3px 8px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease;
     animation: fadeInUp 0.8s ease-out 0.4s both, buttonPulse 2s ease-in-out infinite;
     font-family: 'Poppins', sans-serif;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.hero-cta-button .arrow-down {
+    display: inline-block;
+    font-size: 1.2em;
+    animation: floatingArrow 1.5s ease-in-out infinite;
+}
+
+@keyframes floatingArrow {
+    0%, 100% { 
+        transform: translateY(0px);
+    }
+    50% { 
+        transform: translateY(5px);
+    }
 }
 
 .hero-cta-button:hover {
     transform: translateY(-4px) scale(1.05);
-    box-shadow: 0 8px 20px rgba(91, 33, 182, 0.5),
+    box-shadow: 0 8px 20px rgba(59, 130, 246, 0.5),
                 0 4px 10px rgba(0, 0, 0, 0.4);
     animation: fadeInUp 0.8s ease-out 0.4s both;
 }
@@ -292,11 +310,11 @@ body {
 
 @keyframes buttonPulse {
     0%, 100% { 
-        box-shadow: 0 5px 16px rgba(91, 33, 182, 0.4),
+        box-shadow: 0 5px 16px rgba(59, 130, 246, 0.4),
                     0 3px 8px rgba(0, 0, 0, 0.3);
     }
     50% { 
-        box-shadow: 0 8px 20px rgba(91, 33, 182, 0.6),
+        box-shadow: 0 8px 20px rgba(59, 130, 246, 0.6),
                     0 4px 10px rgba(0, 0, 0, 0.4);
     }
 }
