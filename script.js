@@ -247,3 +247,48 @@ document.getElementById('signupForm').addEventListener('submit', function() {
 document.getElementById('communityPostForm').addEventListener('submit', function() {
     trackEvent('Community', 'New Post', 'Dog Photo Share');
 });
+
+// Hamburger Menu Functionality
+(function() {
+  const hamburgerBtn = document.getElementById('hamburgerBtn');
+  const hamburgerNav = document.getElementById('hamburgerNav');
+  const hamburgerClose = document.getElementById('hamburgerClose');
+  const hamburgerOverlay = document.getElementById('hamburgerOverlay');
+
+  if (hamburgerBtn && hamburgerNav && hamburgerOverlay) {
+    // Open menu
+    hamburgerBtn.addEventListener('click', () => {
+      hamburgerBtn.classList.add('active');
+      hamburgerNav.classList.add('active');
+      hamburgerOverlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    });
+
+    // Close menu
+    const closeMenu = () => {
+      hamburgerBtn.classList.remove('active');
+      hamburgerNav.classList.remove('active');
+      hamburgerOverlay.classList.remove('active');
+      document.body.style.overflow = '';
+    };
+
+    if (hamburgerClose) {
+      hamburgerClose.addEventListener('click', closeMenu);
+    }
+
+    hamburgerOverlay.addEventListener('click', closeMenu);
+
+    // Close menu when clicking a link
+    const menuLinks = hamburgerNav.querySelectorAll('a');
+    menuLinks.forEach(link => {
+      link.addEventListener('click', closeMenu);
+    });
+
+    // Close menu on escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && hamburgerNav.classList.contains('active')) {
+        closeMenu();
+      }
+    });
+  }
+})();

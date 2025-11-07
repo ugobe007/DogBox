@@ -10,6 +10,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Hamburger Menu -->
+    <div class="hamburger-menu">
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="hamburger-nav" id="hamburgerNav">
+            <div class="hamburger-header">
+                <h3>Menu</h3>
+                <button class="hamburger-close" id="hamburgerClose">&times;</button>
+            </div>
+            <ul class="hamburger-links">
+                <li><a href="index.html">🏠 Home</a></li>
+                <li><a href="products.html">🛍️ Products</a></li>
+                <li><a href="about.html">🐕 About Us</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger-overlay" id="hamburgerOverlay"></div>
+    </div>
+
     <!-- Floating Navigation -->
     <nav class="floating-nav">
         <a href="index.html#home" class="nav-icon" title="Home">
