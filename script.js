@@ -11,8 +11,8 @@ function nextSlide() {
     slides[currentSlide].classList.add('active');
 }
 
-// Change slide every 3.5 seconds for smoother rotation with 9 images
-setInterval(nextSlide, 3500);
+// Change slide every 4 seconds
+setInterval(nextSlide, 4000);
 
 // ===== Zip Code Form Handler =====
 document.getElementById('zipForm').addEventListener('submit', function(e) {
@@ -202,16 +202,21 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // ===== Load saved posts on page load =====
 window.addEventListener('DOMContentLoaded', function() {
+    // Dog images array for community posts
+    const dogImages = ['dog_1.jpg', 'dog_2.jpg', 'dog_3.jpg', 'dog_4.jpg'];
+    
     // Load community posts from localStorage
     const savedPosts = JSON.parse(localStorage.getItem('dogboxPosts') || '[]');
     const communityGrid = document.getElementById('communityPosts');
     
-    savedPosts.forEach(post => {
+    savedPosts.forEach((post, index) => {
         const postDiv = document.createElement('div');
         postDiv.className = 'community-post';
+        // Cycle through dog images
+        const dogImage = dogImages[index % dogImages.length];
         postDiv.innerHTML = `
             <div class="post-image">
-                <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=400&h=400&fit=crop" alt="${post.dogName}">
+                <img src="${dogImage}" alt="${post.dogName}">
             </div>
             <div class="post-content">
                 <h4>${post.dogName}</h4>
