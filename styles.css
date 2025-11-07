@@ -201,6 +201,26 @@ body {
                       url('dog_4.jpg');
 }
 
+.slide:nth-child(5) {
+    background-image: linear-gradient(rgba(15, 23, 42, 0.5), rgba(15, 23, 42, 0.5)),
+                      url('dog_5.jpg');
+}
+
+.slide:nth-child(6) {
+    background-image: linear-gradient(rgba(15, 23, 42, 0.5), rgba(15, 23, 42, 0.5)),
+                      url('dog_6.webp');
+}
+
+.slide:nth-child(7) {
+    background-image: linear-gradient(rgba(15, 23, 42, 0.5), rgba(15, 23, 42, 0.5)),
+                      url('dog_7.jpg');
+}
+
+.slide:nth-child(8) {
+    background-image: linear-gradient(rgba(15, 23, 42, 0.5), rgba(15, 23, 42, 0.5)),
+                      url('dog_8.jpg');
+}
+
 .hero-overlay {
     position: relative;
     height: 100%;

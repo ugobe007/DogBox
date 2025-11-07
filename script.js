@@ -11,8 +11,8 @@ function nextSlide() {
     slides[currentSlide].classList.add('active');
 }
 
-// Change slide every 4 seconds
-setInterval(nextSlide, 4000);
+// Change slide every 3.5 seconds for 8 images
+setInterval(nextSlide, 3500);
 
 // ===== Zip Code Form Handler =====
 document.getElementById('zipForm').addEventListener('submit', function(e) {
@@ -202,8 +202,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // ===== Load saved posts on page load =====
 window.addEventListener('DOMContentLoaded', function() {
-    // Dog images array for community posts
-    const dogImages = ['dog_1.jpg', 'dog_2.jpg', 'dog_3.jpg', 'dog_4.jpg'];
+    // Dog images array for community posts - all 8 images
+    const dogImages = ['dog_1.jpg', 'dog_2.jpg', 'dog_3.jpg', 'dog_4.jpg', 'dog_5.jpg', 'dog_6.webp', 'dog_7.jpg', 'dog_8.jpg'];
     
     // Load community posts from localStorage
     const savedPosts = JSON.parse(localStorage.getItem('dogboxPosts') || '[]');
